@@ -1,0 +1,68 @@
+.table-style {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #21835439;
+}
+
+.td-style {
+    margin: 0;
+    padding: 0;
+}
+
+.button-style {
+    width: 100%;
+    appearance: none;
+    border-radius: 0;
+    position: relative;
+    height: 63px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: #15b8f026;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-style {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-group-style {
+    padding: 50px;
+    text-align: center;
+}
+
+.input-char-style {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-color: #c78686;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.input-char-style.active {
+    background-color: #567dd8;
+}
+
+/* 반응형 디자인을 위한 추가 CSS */
+@media (max-width: 600px) {
+    .button-style {
+        height: 50px;
+    }
+
+    .number-style {
+        height: 40px;
+        width: 40px;
+    }
+}
